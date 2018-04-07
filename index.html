@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime number</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function sumPrime(num){
+			var sum = 0;
+						
+			for (var i = 2; i < num; i++) {
+					var primeNum = true;
+					
+				for (var j = 2; j < i; j++) {
+			        if ( i%j==0 ){
+			            primeNum = false;
+			            break;
+			            }
+				}
+				if(primeNum){
+					sum += i;
+					console.log(i);
+
+				}
+			}
+			return sum;
+
+		}
+		
+		console.log(sumPrime(1000));
+
+
+
+
+
+
+			// for (var i = 0; i < primeArr.length; i++) {
+			// 	sum += primeArr[i];
+			// }
+			// console.log(primeArr);
+	</script>
+
+</body>
+</html>
